@@ -1,0 +1,46 @@
+$primary-color: #ff6600;
+$sidebar-bg: #f8f9fa;
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  width: 250px;
+  background: $sidebar-bg;
+}
+
+#page-content-wrapper {
+  flex: 1;
+}
+
+.card {
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  background-color: $primary-color;
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+.sidebar-heading {
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
