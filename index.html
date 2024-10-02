@@ -1,328 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- Sidebar -->
-    <div class="d-flex" id="wrapper">
-      <div class="bg-[##ccf2ff]" id="sidebar-wrapper">
-        <div class="sidebar-heading d-flex justify-content-between">
-          <div class="d-flex align-items-center">
-            <img
-              src="./images/logo.png"
-              alt="Logo"
-              width="37"
-              height="42.6"
-              class="mr-1"
-              id="title"
-            />
-            <span class="sidebar-title">Dubai</span>
-          </div>
 
-          <div class="toggle bg-white p-1 sidebar-title">
-            <img src="./images/toggle.png" alt="toggleR" id="sidebar-toggle" />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div class="d-flex" id="wrapper">
+    <div class="bg-[##ccf2ff]" id="sidebar-wrapper">
+      <div class="sidebar-heading d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <img src="./images/logo.png" alt="Logo" width="37" height="42.6" class="mr-1" id="title" />
+          <span class="sidebar-title">Dubai</span>
         </div>
-        <div class="list-group list-group-flush" id="sidebar-menu">
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img
-              src="./images/home.png"
-              alt="Home"
-              class="sidebar-icon mr-2 active-class bg-white p-2"
-            />
-            <span class="font-weight-bold item-text">Dashboard</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/doc.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">Induction Documents</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/folder.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">My Programme</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/book.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">Learner Handbook</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/calendar.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">Calendar events</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/Group 6999.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">My Classes</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/test.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">My Test</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/activities.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">School Activities</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/accomodation.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">Accommodation</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/link.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">Study links</span>
-          </a>
-          <a
-            href="#"
-            class="list-group-item list-group-item-action bg-light d-flex justify-content-between"
-          >
-            <div>
-              <img src="./images/course.png" alt="Home" class="mr-2" />
-              <span class="font-weight-[500] item-text">Course report</span>
-            </div>
-            <div>
-              <img src="./images/dropDown.png" alt="dropDown" />
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/progress.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">Progress report</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/EOC.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text"
-              >End of course report</span
-            >
-          </a>
-          <a
-            href="#"
-            class="list-group-item list-group-item-action bg-light d-flex justify-content-between"
-          >
-            <div>
-              <img src="./images/feedback.png" alt="Home" class="mr-2" />
-              <span class="font-weight-[500] item-text">Feedback</span>
-            </div>
-            <div>
-              <img src="./images/dropDown.png" alt="dropDown" />
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/CF.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">Class Feedback</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/ticket.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">Student tickets</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/jobs.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">Jobs board</span>
-          </a>
-          <a
-            href="#"
-            class="list-group-item list-group-item-action bg-light d-flex justify-content-between"
-          >
-            <div>
-              <img src="./images/entry.png" alt="Home" class="mr-2" />
-              <span class="font-weight-[500] item-text">Entry test</span>
-            </div>
-            <div>
-              <img src="./images/dropDown.png" alt="dropDown" />
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/GT.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">Grammer test</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/WT.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">Writing test</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">
-            <img src="./images/ST.png" alt="Home" class="mr-2" />
-            <span class="font-weight-[500] item-text">Speaking test</span>
-          </a>
+
+        <div class="toggle bg-white p-1 sidebar-title">
+          <img src="./images/toggle.png" alt="toggleR" id="sidebar-toggle" />
         </div>
       </div>
-
-      <!-- Page Content -->
-      <div id="page-content-wrapper">
-        <nav
-          class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
-        >
-          <div class="navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item mt-4">
-                <a
-                  class="liveClass nav-link bg-secondary text-white text-center p-2"
-                  href="#"
-                  >Enter to your Live class</a
-                >
-              </li>
-              <div class="mt-4">
-                <img
-                  src="./images/bell.png"
-                  alt="Home"
-                  class="sidebar-icon mr-2 p-2"
-                />
-              </div>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <img
-                    src="./images/profile.png"
-                    alt="Home"
-                    class="sidebar-icon mr-2 p-2"
-                  />
-                  <span class="font-weight-bold item-text">Adrea Paez</span>
-                </a>
-              </li>
-            </ul>
+      <div class="list-group list-group-flush" id="sidebar-menu">
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/home.png" alt="Home" class="sidebar-icon mr-2 active-class bg-white p-2" />
+          <span class="font-weight-bold item-text">Dashboard</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/doc.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">Induction Documents</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/folder.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">My Programme</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/book.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">Learner Handbook</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/calendar.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">Calendar events</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/Group 6999.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">My Classes</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/test.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">My Test</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/activities.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">School Activities</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/accomodation.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">Accommodation</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/link.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">Study links</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light d-flex justify-content-between">
+          <div>
+            <img src="./images/course.png" alt="Home" class="mr-2" />
+            <span class="font-weight-[500] item-text">Course report</span>
           </div>
-        </nav>
+          <div>
+            <img src="./images/dropDown.png" alt="dropDown" />
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/progress.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">Progress report</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/EOC.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">End of course report</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light d-flex justify-content-between">
+          <div>
+            <img src="./images/feedback.png" alt="Home" class="mr-2" />
+            <span class="font-weight-[500] item-text">Feedback</span>
+          </div>
+          <div>
+            <img src="./images/dropDown.png" alt="dropDown" />
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/CF.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">Class Feedback</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/ticket.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">Student tickets</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/jobs.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">Jobs board</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light d-flex justify-content-between">
+          <div>
+            <img src="./images/entry.png" alt="Home" class="mr-2" />
+            <span class="font-weight-[500] item-text">Entry test</span>
+          </div>
+          <div>
+            <img src="./images/dropDown.png" alt="dropDown" />
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/GT.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">Grammer test</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/WT.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">Writing test</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <img src="./images/ST.png" alt="Home" class="mr-2" />
+          <span class="font-weight-[500] item-text">Speaking test</span>
+        </a>
+      </div>
+    </div>
 
-        <div class="container-fluid">
-          <div class="row my-4">
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card">
-                <div class="card-body">
-                  <p class="card-title">Your level</p>
-                  <h5 class="card-text">Elementary</h5>
-                  <div class="container">
-                    <div class="slider-container">
-                      <div class="slider-track">
-                        <div class="slider-thumb"></div>
-                      </div>
-                    </div>
-                    <div class="slider-labels d-flex justify-content-between">
-                      <span class="label">A1</span>
-                      <span class="label">A2</span>
-                      <span class="label">B1</span>
-                      <span class="label">B2</span>
-                      <span class="label">C1</span>
-                      <span class="label">C2</span>
-                    </div>
-                  </div>
-
-                  <p class="mt-2 font-weight-bold">Remaining weeks:</p>
-                  <h5 class="card-text">10 weeks</h5>
-                  <div class="progress mb-1">
-                    <div
-                      class="progress-bar bg-dark"
-                      role="progressbar"
-                      style="width: 20%"
-                    ></div>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <span class="mt-2">0</span>
-                    <span class="mt-2">24</span>
-                  </div>
-                  <p>Course end date</p>
-                  <h5>11, Apr 2019</h5>
-                </div>
-              </div>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mt-4">
+              <a class="liveClass nav-link bg-secondary text-white text-center p-2" href="#">Enter to your Live
+                class</a>
+            </li>
+            <div class="mt-4">
+              <img src="./images/bell.png" alt="Home" class="sidebar-icon mr-2 p-2" />
             </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="./images/profile.png" alt="Home" class="sidebar-icon mr-2 p-2" />
+                <span class="font-weight-bold item-text">Adrea Paez</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-            <!-- Classes Card -->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">My Classes</h5>
-                  <div class="media mb-3 p-3">
-                    <img
-                      src="./images/TOM.png"
-                      class="mr-3 rounded-circle"
-                      alt="..."
-                      width="70"
-                      height="70"
-                    />
-                    <div class="media-body">
-                      <div class="d-flex justify-content-between">
-                        <p class="name">Tom Hudd</p>
-                        <p class="pre bg-dark text-white p-1">
-                          Preintermediate
-                        </p>
-                      </div>
-                      <div
-                        class="d-flex justify-content-between"
-                        style="width: 30%"
-                      >
-                        <p class="media-status">Online</p>
-                        <img
-                          src="./images/greenDot.png"
-                          alt="Online"
-                          style="height: 7px; width: 7px"
-                          class="mt-1"
-                        />
-                      </div>
-                      <div class="d-flex justify-content-between">
-                        <div class="flex-column">
-                          <p class="media-title">Schedule</p>
-                          <p class="media-subtitle">12:00 - 13:00</p>
-                        </div>
-                        <div class="flex-column">
-                          <p>Schedule</p>
-                          <p>11, Apr 2019</p>
-                        </div>
-                        <div class="flex-column">
-                          <p>Schedule</p>
-                          <p>11, Apr 2019</p>
-                        </div>
-                      </div>
+      <div class="container-fluid">
+        <div class="row my-4">
+          <div class="col-lg-3 col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-title">Your level</p>
+                <h5 class="card-text">Elementary</h5>
+                <div class="container">
+                  <div class="slider-contain">
+                    <div class="slider-track">
+                      <div class="slider-thumb"></div>
                     </div>
                   </div>
-
-                  <!-- Card 2 -->
-                  <div class="media mb-3 p-3">
-                    <img
-                      src="./images/jasmine.png"
-                      class="mr-3 rounded-circle"
-                      alt="..."
-                      width="70"
-                      height="70"
-                    />
-                    <div class="media-body">
-                      <div class="d-flex justify-content-between">
-                        <p class="name">Tom Hudd</p>
-                        <p class="pre bg-dark text-white p-1">
-                          Preintermediate
-                        </p>
-                      </div>
-                      <div
-                        class="d-flex justify-content-between"
-                        style="width: 30%"
-                      >
-                        <p class="media-status">Online</p>
-                        <img
-                          src="./images/greenDot.png"
-                          alt="Online"
-                          style="height: 7px; width: 7px"
-                          class="mt-1"
-                        />
-                      </div>
-                    </div>
+                  <div class="slider-labels d-flex justify-content-between">
+                    <span class="label">A1</span>
+                    <span class="label">A2</span>
+                    <span class="label">B1</span>
+                    <span class="label">B2</span>
+                    <span class="label">C1</span>
+                    <span class="label">C2</span>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <!-- Attendance Card -->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Attendance</h5>
-                  <div id="attendance-chart"></div>
-                  <p class="text-center">Present: 93.98%</p>
+                <p class="mt-2 font-weight-bold">Remaining weeks:</p>
+                <h5 class="card-text">10 weeks</h5>
+                <div class="progress mb-1">
+                  <div class="progress-bar bg-dark" role="progressbar" style="width: 20%"></div>
                 </div>
+                <div class="d-flex justify-content-between">
+                  <span class="mt-2">0</span>
+                  <span class="mt-2">24</span>
+                </div>
+                <p>Course end date</p>
+                <h5>11, Apr 2019</h5>
               </div>
             </div>
           </div>
 
-          <div class="row">
-            <!-- Additional Cards here -->
+          <!-- Classes Card -->
+          <div class="col-lg-5 col-md-7 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">My Classes</h5>
+                <div class="class-card p-3 mb-3">
+                  <div class="d-flex align-items-center">
+                    <!-- Profile Image -->
+                    <img src="./images/TOM.png" class="rounded-circle" alt="Tom Hudd" width="70" height="70" />
+                    <!-- Content -->
+                    <div class="ml-3 w-100">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <div>
+                          <p class="mb-0 font-weight-bold">Tom Hudd</p>
+                          <div class="d-flex align-items-center">
+                            <p class="mb-0 text-muted small">Online</p>
+                            <span class="online-status ml-1">
+                              <img src="./images/greenDot.png" alt="Online" width="10" height="10" />
+                            </span>
+                          </div>
+                        </div>
+                        <span class="badge badge-dark p-2">Preintermediate</span>
+                      </div>
+                      <div class="class-info d-flex flex-wrap mt-3">
+                        <div class="info-item">
+                          <p class="mb-0 text-muted small">Schedule</p>
+                          <p class="info-value mb-0">12:00 - 13:00</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="info-item">
+                          <p class="mb-0 text-muted small">Campus</p>
+                          <p class="info-value mb-0">JLT Masaya</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="info-item">
+                          <p class="mb-0 text-muted small">Floor</p>
+                          <p class="info-value mb-0">36th</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="info-item">
+                          <p class="mb-0 text-muted small">Classroom</p>
+                          <p class="info-value mb-0">10</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="class-card p-3 mb-3">
+                  <div class="d-flex align-items-center">
+                    <!-- Profile Image -->
+                    <img src="./images/jasmine.png" class="rounded-circle" alt="Tom Hudd" width="70" height="70" />
+                    <!-- Content -->
+                    <div class="ml-3 w-100">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <div>
+                          <p class="mb-0 font-weight-bold">Jasmine Navarro</p>
+                          <div class="d-flex align-items-center">
+                            <p class="mb-0 text-muted small">Online</p>
+                            <span class="online-status ml-1">
+                              <img src="./images/greenDot.png" alt="Online" width="10" height="10" />
+                            </span>
+                          </div>
+                        </div>
+                        <span class="badge badge-dark p-2">Preintermediate</span>
+                      </div>
+                      <div class="class-info d-flex flex-wrap mt-3">
+                        <div class="info-item">
+                          <p class="mb-0 text-muted small">Schedule</p>
+                          <p class="info-value mb-0">12:00 - 13:00</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="info-item">
+                          <p class="mb-0 text-muted small">Campus</p>
+                          <p class="info-value mb-0">JLT Masaya</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="info-item">
+                          <p class="mb-0 text-muted small">Floor</p>
+                          <p class="info-value mb-0">36th</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="info-item">
+                          <p class="mb-0 text-muted small">Classroom</p>
+                          <p class="info-value mb-0">10</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="chart-contain">
+                <div class="legend d-flex justify-content-between">
+                  <ul>
+                    <li class="d-flex">
+                      <span class="present"></span> Present
+                    </li>
+                    <li class="d-flex"><span class="late"></span> Late</li>
+                    <li class="d-flex">
+                      <span class="absent"></span> Absent
+                    </li>
+                    <li class="d-flex">
+                      <span class="holiday"></span> Holiday
+                    </li>
+                  </ul>
+                  <canvas id="attendanceChart" width="200" height="200"></canvas>
+                  <!-- Set smaller width and height -->
+                </div>
+              </div>
+            </div>
+
+            <script src="./js/chart.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row my-4">
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Meet Sophia<br /></h5>
+                    <h5 class="card-title">Your Virtual Assistant</h5>
+                    <div class="d-flex justify-content-center">
+                      <button type="button" class="btn btn-warning btn-md">Ask Any Question</button>
+                    </div>
+                    <div>
+                      <img src="./images/sophia.png" class="card-img-top img-fluid" alt="Sophia" />
+                    </div>
+                    
+                   
+                    
+                </div>
+            </div>
+        </div>
+        
+
+          <!-- Classes Card -->
+          <div class="col-lg-5 col-md-7 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Social Activities</h5>
+                <div class="class-card">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img src="./images/city.png" alt="Home" class="img-fluid" />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="class-details">
+                        <h5 class="mb-0 font-weight-bold">Downtown Dubai walk</h5>
+                        <div class="class-info d-flex flex-wrap mt-3">
+                          <div class="info-item">
+                            <p class="mb-0 text-muted small">Price</p>
+                            <p class="info-value mb-0">600 GBP</p>
+                          </div>
+                          <div class="divider d-none d-md-block"></div>
+
+                          <div class="info-item">
+                            <p class="mb-0 text-muted small">Date</p>
+                            <p class="info-value mb-0">Wed 30th</p>
+                          </div>
+                          <div class="divider d-none d-md-block"></div>
+                          <div class="info-item">
+                            <p class="mb-0 text-muted small">Schedule</p>
+                            <p class="info-value mb-0">11:00 - 13:00</p>
+                          </div>
+                        </div>
+                        <div class="text-md-right mt-3">
+                          <img src="./images/card5.png" alt="Home" class="img-fluid" />
+                        </div>
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mt-3">
+                          <div class="">
+                            <p class="mb-0 font-weight-bold">Activity Status</p>
+                            <div class="d-flex align-items-center">
+                              <p class="mb-0 text-muted small">active</p>
+                              <span class="online-status ml-1">
+                                <img src="./images/greenDot.png" alt="Online" width="10" height="10" />
+                              </span>
+                            </div>
+                          </div>
+                          <span class="badge badge-warning p-2 mt-2 mt-md-0">Register</span>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="container">
+                <div class="header">
+
+                  <div class="dropdown">My test Results <i class="fas fa-caret-down"></i></div>
+                </div>
+                <canvas id="myChart" class="chart"></canvas>
+                <div class="legend">
+                  <div><span class="student-score"></span> Student score</div>
+                  <div><span class="class-average-score"></span> Class average score</div>
+                </div>
+              </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="./js/chart2.js"></script>
           </div>
         </div>
       </div>
@@ -331,5 +407,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
-  </body>
+</body>
+
 </html>
