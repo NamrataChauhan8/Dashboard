@@ -42,13 +42,12 @@ body {
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column; /* Ensure content flows vertically */
-  height: 100%; /* Allow cards to fill their parent height */
+  flex-direction: column; 
+  height: 100%; 
 }
 
-/* Optional: Set a minimum height for cards */
 .card-body {
-  flex-grow: 1; /* Allow the body to grow and fill available space */
+  flex-grow: 1; 
 }
 
 .progress-bar {
@@ -117,20 +116,20 @@ body {
   margin-right: 5px;
 }
 .progress {
-  width: 90%; /* Maintain a consistent width */
+  width: 90%; 
   height: 10px;
   background-color: #e0e0e0;
-  margin: 0 auto; /* Center the progress bar */
+  margin: 0 auto; 
 }
 
-/* Adjust slider height */
+
 .slider-contain {
-  height: 40px; /* Example height, adjust as needed */
+  height: 40px; 
 }
 
-/* Optional: Set a fixed height for the slider track if necessary */
+
 .slider-track {
-  height: 10px; /* Set fixed height for slider track */
+  height: 10px; 
 }
 
 
@@ -251,8 +250,8 @@ body {
 
 .slider-container {
   position: relative;
-  width: 500px; /* Adjust as needed */
-  height: 400px; /* Adjust as needed */
+  width: 500px; 
+  height: 400px; 
 }
 
 .chart-contain {
@@ -261,19 +260,19 @@ body {
   background-color: #f8f9fa;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center the chart */
+  text-align: center; 
   height: 100%;
 }
 
-/* Adjust canvas size in CSS */
+
 canvas {
-  max-width: 200px; /* Set the max-width for the canvas */
-  max-height: 200px; /* Set the max-height for the canvas */
-  width: auto !important; /* Allow automatic scaling */
-  height: auto !important; /* Allow automatic scaling */
+  max-width: 200px; 
+  max-height: 200px; 
+  width: auto !important; 
+  height: auto !important; 
 }
 
-/* Legend styling */
+
 
 .legend ul {
   list-style: none;
@@ -292,7 +291,7 @@ canvas {
   border-radius: 50%;
 }
 
-/* Color circles for the legend */
+
 .present {
   background-color: #4caf50;
 }
@@ -309,14 +308,14 @@ canvas {
   background-color: #2196f3;
 }
 
-/* Responsive styling */
+
 @media (max-width: 576px) {
   .chart-contain {
       padding: 10px;
   }
 
   .legend {
-      flex-direction: column; /* Stack the legend items on small screens */
+      flex-direction: column; 
       align-items: flex-start;
   }
 
@@ -340,13 +339,13 @@ canvas {
 
 @media (min-width: 768px) {
   .legend {
-      flex-direction: row; /* Keep legend items side by side for larger screens */
+      flex-direction: row; 
   }
 }
 .row {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping of cards */
-  align-items: stretch; /* Stretch cards to the same height */
+  flex-wrap: wrap; 
+  align-items: stretch; 
 }
 
 .divider{
@@ -368,14 +367,14 @@ canvas {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 100%; /* Make it take the full width of its parent */
-  max-width: 400px; /* Optional: Set a max width */
+  width: 100%; 
+  max-width: 400px; 
 }
 
 .chart {
-  width: 100% !important; /* Force the chart to fill the container */
-  height: auto !important; /* Let the height adjust automatically */
-  aspect-ratio: 2 / 1; /* Optional: Maintain a specific aspect ratio */
+  width: 100% !important; 
+  height: auto !important; 
+  aspect-ratio: 2 / 1; 
 }
 
 .legend {

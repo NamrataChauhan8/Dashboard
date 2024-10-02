@@ -5,12 +5,7 @@ var attendanceData = {
   labels: ['Present', 'Late', 'Absent', 'Holiday'],
   datasets: [{
     data: [93.98, 2, 4, 0.02],
-    // Replace with your actual attendance data
-    backgroundColor: ['#f0f0f0', // Present
-    '#ffbb33', // Late
-    '#ff7043', // Absent
-    '#ffa726' // Holiday
-    ]
+    backgroundColor: ['#f0f0f0', '#ffbb33', '#ff7043', '#ffa726']
   }]
 };
 var myChart = new Chart(ctx, {
@@ -18,11 +13,9 @@ var myChart = new Chart(ctx, {
   data: attendanceData,
   options: {
     cutout: '70%',
-    // Adjust the size of the hole in the donut
     plugins: {
       legend: {
-        display: false // Hide the default Chart.js legend
-
+        display: false
       },
       tooltip: {
         callbacks: {
