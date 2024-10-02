@@ -192,7 +192,7 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">My Classes</h5>
-                <div class="class-card p-3 mb-3">
+                <div class="card-items class-card p-3 mb-3">
                   <div class="d-flex align-items-center">
                     <!-- Profile Image -->
                     <img src="./images/TOM.png" class="rounded-circle" alt="Tom Hudd" width="70" height="70" />
@@ -234,7 +234,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="class-card p-3 mb-3">
+                <div class="card-items class-card p-3 mb-3">
                   <div class="d-flex align-items-center">
                     <!-- Profile Image -->
                     <img src="./images/jasmine.png" class="rounded-circle" alt="Tom Hudd" width="70" height="70" />
@@ -310,22 +310,19 @@
         <div class="row my-4">
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="card">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Meet Sophia<br /></h5>
-                    <h5 class="card-title">Your Virtual Assistant</h5>
-                    <div class="d-flex justify-content-center">
-                      <button type="button" class="btn btn-warning btn-md">Ask Any Question</button>
-                    </div>
-                    <div>
-                      <img src="./images/sophia.png" class="card-img-top img-fluid" alt="Sophia" />
-                    </div>
-                    
-                   
-                    
+              <div class="card-body text-center">
+                <h5 class="card-title">Meet Sophia<br /></h5>
+                <h5 class="card-title">Your Virtual Assistant</h5>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="btn btn-warning btn-md">Ask Any Question</button>
                 </div>
+                <div class="mt-3">
+                  <img src="./images/sophia.png" class="card-img-top img-fluid" alt="Sophia" />
+                </div>
+              </div>
             </div>
-        </div>
-        
+          </div>
+
 
           <!-- Classes Card -->
           <div class="col-lg-5 col-md-7 mb-4">
@@ -335,10 +332,10 @@
                 <div class="class-card">
                   <div class="row">
                     <div class="col-md-4">
-                      <img src="./images/city.png" alt="Home" class="img-fluid" />
+                      <img src="./images/city.png" alt="Home" class="img-fluid w-100" />
                     </div>
                     <div class="col-md-8">
-                      <div class="class-details">
+                      <div class="card-items p-3 class-details">
                         <h5 class="mb-0 font-weight-bold">Downtown Dubai walk</h5>
                         <div class="class-info d-flex flex-wrap mt-3">
                           <div class="info-item">
@@ -384,12 +381,10 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
-              <div class="container">
-                <div class="header">
+              <h5 class="dropdown m-2">My test Results <i class="fas fa-caret-down"></i></h5>
+              <div class="card-body">
+                <img src="./images/Group 6810.png" alt="Home" class="img-fluid" />
 
-                  <div class="dropdown">My test Results <i class="fas fa-caret-down"></i></div>
-                </div>
-                <canvas id="myChart" class="chart"></canvas>
                 <div class="legend">
                   <div><span class="student-score"></span> Student score</div>
                   <div><span class="class-average-score"></span> Class average score</div>
@@ -397,11 +392,22 @@
               </div>
             </div>
 
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-            <script src="./js/chart2.js"></script>
+
           </div>
         </div>
       </div>
+      <footer>
+        <div class="d-flex flex-lg-row m-2">
+
+          <div class="container-fluid">
+  
+            <p class="text-center text-muted'">Powered by studybox.ai © 2024</p>
+          </div>
+          <div>
+            <img src="./images/Group 6949.png" alt="Home" class="img-fluid" />
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
